@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-Task 2 - "Size me please" 
+Task 2 - "Size me please"
 objective: Find matric shape
 """
 
