@@ -49,25 +49,25 @@ Python 3.5 comes pre-installed on Ubuntu 16.04. How convenient! You can confirm 
 
 ### Installing pip 19.1
 
-'''Bash
+```Bash
 wget https://bootstrap.pypa.io/get-pip.py
 sudo python3 get-pip.py
 rm get-pip.py
-'''
+```
 
 To check that pip has been successfully downloaded, use pip -V. Your output should look like:
 
-'''Bash
+```Bash
 $ pip -V
 pip 19.1.1 from /usr/local/lib/python3.5/dist-packages/pip (python 3.5)
-'''
+```
 
 ### Installing numpy 1.15, scipy 1.3, and pycodestyle 2.5
 
-'''Bash
+```Bash
 $ pip install --user numpy==1.15
 $ pip install --user scipy==1.3
 $ pip install --user pycodestyle==2.5
-'''
+```
 
 To check that all have been successfully downloaded, use pip list.
