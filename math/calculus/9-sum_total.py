@@ -13,9 +13,4 @@ def summation_i_squared(n):
 
     if n < 1 or not isinstance(n, int):
         return None
-    else:
-        sm = 0
-        for i in range(1, n+1):
-            sm += (i ** 2)
-
-        return sm
+    return sum(map(lambda n: n**2, range(n + 1)))
