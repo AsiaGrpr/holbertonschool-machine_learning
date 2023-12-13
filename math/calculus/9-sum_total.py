@@ -6,7 +6,7 @@
 def summation_i_squared(n):
     """
     Function to sum of n squared:
-    
+
     @param n - number of integers to calculate
     @return sum of n squared
     """
