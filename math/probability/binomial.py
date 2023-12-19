@@ -49,3 +49,15 @@ class Binomial:
             self.n) / (self.factorial(k) * self.factorial(self.n - k))
 
         return binomial_coeff * (self.p ** k) * ((1 - self.p) ** (self.n - k))
+
+    def cdf(self, k):
+        """
+        Function to calculate cdf for a given number
+        """
+
+        if not isinstance(k, int):
+            k = int(k)
+        if k < 0:
+            return 0
+
+        return sum([self.pmf(x) for x in range(k + 1)])
