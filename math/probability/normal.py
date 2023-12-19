@@ -9,6 +9,9 @@ class Normal:
     Normal class that represents a normal distribution
     """
 
+    pi = 3.1415926536
+    e = 2.7182818285
+
     def __init__(self, data=None, mean=0., stddev=1.):
         if stddev <= 0:
             raise ValueError("stddev must be a positive value")
@@ -38,3 +41,16 @@ class Normal:
         """
 
         return self.mean + z * self.stddev
+
+    def pdf(self, x):
+        """
+        Function to calculate pdf
+        """
+
+        sqrt_2_pi = (2 * self.pi) ** 0.5
+        coefficient = 1 / (self.stddev * sqrt_2_pi)
+        exponent = -0.5 * ((x - self.mean) / self.stddev) ** 2
+
+        pdf_value = coefficient * (self.e ** exponent)
+
+        return pdf_value
